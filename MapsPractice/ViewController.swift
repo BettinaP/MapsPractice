@@ -49,6 +49,21 @@ class ViewController: UIViewController, MKMapViewDelegate {
         annotation.subtitle = "One day, I'll go watch a game there!"
         annotation.coordinate = mLocation
         map.addAnnotation(annotation)
+        
+        let uiLongPressGR = UILongPressGestureRecognizer(target: self, action: #selector(self.longpress))
+        uiLongPressGR.minimumPressDuration = 2 //standard
+        map.addGestureRecognizer(uiLongPressGR)
+    }
+    
+    @objc func longpress(gestureRecognizer: UIGestureRecognizer) {
+        let touchPoint = gestureRecognizer.location(in: self.map)
+        let coordinate = map.convert(touchPoint, toCoordinateFrom: self.map)//map converting touchpoint to coordinates from the map. TouchPoint shows us location on screen to coordinates. Map does converting for us because it knows both where gesture was and where it is in terms of coordinate space.
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        annotation.title = "New place"
+        annotation.subtitle = "maybe go there..."
+        map.addAnnotation(annotation)
+        
     }
 
     override func didReceiveMemoryWarning() {
