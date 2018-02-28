@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>User location needed for most up to date map response</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>User location is needed for accuracy</string>
 </dict>
 </plist>

@@ -12,6 +12,7 @@
 		DE867AFC20465306004CD3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE867AFA20465306004CD3D2 /* Main.storyboard */; };
 		DE867AFE20465306004CD3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE867AFD20465306004CD3D2 /* Assets.xcassets */; };
 		DE867B0120465306004CD3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE867AFF20465306004CD3D2 /* LaunchScreen.storyboard */; };
+		DE867B0A2046669D004CD3D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE867B092046669D004CD3D2 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DE867AFD20465306004CD3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE867B0020465306004CD3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE867B0220465306004CD3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE867B092046669D004CD3D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE867B0A2046669D004CD3D2 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				DE867AF520465306004CD3D2 /* MapsPractice */,
 				DE867AF420465306004CD3D2 /* Products */,
+				DE867B082046669C004CD3D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				DE867B0220465306004CD3D2 /* Info.plist */,
 			);
 			path = MapsPractice;
+			sourceTree = "<group>";
+		};
+		DE867B082046669C004CD3D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE867B092046669D004CD3D2 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
